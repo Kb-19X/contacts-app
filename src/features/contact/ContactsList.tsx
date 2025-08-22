@@ -77,7 +77,7 @@ export const ContactsList = () => {
 
       {errorAPI && <Alert severity="error" sx={{ marginBottom: '20px' }}>{errorAPI}</Alert>}
       
-      <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '20px' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '20px', width:'100%' }}>
         {contacts.map((contact) => (
           <Card
             key={contact._id}

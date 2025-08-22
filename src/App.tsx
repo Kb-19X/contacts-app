@@ -7,7 +7,7 @@ import { ProtectedRoute } from './routes/Protected.route';
 
 import { Layout } from './ui/layout/Layout';
 import { HomePage } from './pages/Home.page';
-import { FavorisPage } from './pages/favoris.page';
+
 import { LoginPage } from './pages/Login.page';
 import { ContactsPage } from './pages/Contacts.page';
 import { AddContactPage } from './pages/AddContact.page';
@@ -29,7 +29,7 @@ export function App() {
               <Route path={ROUTES_CONFIG.CONTACTS.LIST} element={<ContactsPage />} />
               <Route path={ROUTES_CONFIG.CONTACTS.CREATE} element={<AddContactPage />} />
               <Route path={ROUTES_CONFIG.CONTACTS.EDIT(':id')} element={<EditContactPage />} />
-               <Route path={ROUTES_CONFIG.CONTACTS.FAVORITES} element={<FavorisPage />} />
+             
             </Route>
             <Route element={<ProtectedRoute roles={['admin']} />}>
               <Route path={ROUTES_CONFIG.USERS.LIST} element={<UsersPage />} />
